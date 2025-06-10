@@ -940,9 +940,6 @@ input:focus {
   .value {
     width: 30vw;
   }
-  .about-h2 {
-    text-align: center;
-  }
 
   .footer-top,
   .footer-bottom {
@@ -1015,9 +1012,6 @@ input:focus {
   .vision,
   .value {
     width: 30vw;
-  }
-  .about-h2 {
-    text-align: center;
   }
   .footer-top {
     padding: 20px;
