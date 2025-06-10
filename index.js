@@ -1,15 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".close-icon");
 const menu = document.querySelector(".navigation-container");
-function updateFooterWidth() {
-  const element = document.querySelector(".home-testimonial");
-  const width = element.getBoundingClientRect().width;
-  document.documentElement.style.setProperty(
-    "--my-element-width",
-    `${width}px`
-  );
-}
-window.addEventListener("resize", updateFooterWidth);
 hamburger.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent click from reaching document
   menu.classList.add("show");
