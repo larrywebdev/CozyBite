@@ -229,14 +229,18 @@ ul {
 .about-us {
   min-height: 80vh;
   width: 100%;
+  padding: 100px 20px 30px;
+  background-color: #f7e1c7;
+}
+.about-container {
   display: flex;
   justify-self: center;
   align-items: center;
   gap: 30px;
-  padding: 100px 20px 30px;
-  background-color: #f7e1c7;
+  width: 100%;
+  max-width: 1200px;
 }
-.about-us img {
+.about-container img {
   object-fit: cover;
   width: 500px;
   height: 400px;
@@ -256,11 +260,12 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 1200px;
 }
 .mission,
 .vision,
 .value {
-  width: 350px;
+  width: 30vw;
   text-align: justify;
   justify-items: center;
   padding: 0 30px;
@@ -628,10 +633,10 @@ input:focus {
     text-align: center;
   }
 
-  .about-us {
+  .about-container {
     flex-direction: column;
   }
-  .about-us img {
+  .about-container img {
     width: 100%;
     height: auto;
     aspect-ratio: 4/3;
@@ -652,6 +657,11 @@ input:focus {
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .about-h2 {
+    text-align: center;
+  }
+
   .footer-top,
   .footer-bottom {
     padding: 20px;
@@ -767,10 +777,10 @@ input:focus {
   .meal h2 {
     text-align: center;
   }
-  .about-us {
+  .about-container {
     flex-direction: column;
   }
-  .about-us img {
+  .about-container img {
     width: 100%;
     height: auto;
     aspect-ratio: 4/2.5;
@@ -791,6 +801,10 @@ input:focus {
   .newsletter input {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .about-h2 {
+    text-align: center;
   }
 
   .footer-top,
@@ -913,6 +927,23 @@ input:focus {
     aspect-ratio: 5/4;
     height: auto;
   }
+  .about-container {
+    gap: 20px;
+  }
+  .about-container img {
+    width: 45vw;
+    aspect-ratio: 1;
+    height: auto;
+  }
+  .mission,
+  .vision,
+  .value {
+    width: 30vw;
+  }
+  .about-h2 {
+    text-align: center;
+  }
+
   .footer-top,
   .footer-bottom {
     padding: 20px;
@@ -980,13 +1011,20 @@ input:focus {
   .meal-item {
     width: 100%;
   }
-
+  .mission,
+  .vision,
+  .value {
+    width: 30vw;
+  }
+  .about-h2 {
+    text-align: center;
+  }
   .footer-top {
     padding: 20px;
   }
 
   .footer-item {
-    width: 200px;
+    width: 300px;
   }
   .footer-links-item {
     width: 210px;
@@ -1032,8 +1070,15 @@ input:focus {
     flex-direction: row;
     gap: 45px;
   }
+  .mission,
+  .vision,
+  .value {
+    max-width: 390px;
+  }
+
   .footer-container {
-    width: var(--my-element-width);
+    width: 100%;
+    max-width: 1200px;
   }
   .footer-top {
     justify-items: center;
