@@ -768,6 +768,23 @@ input:focus {
   .meal h2 {
     text-align: center;
   }
+  .statement {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .mission,
+  .vision,
+  .value {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .footer-top,
   .footer-bottom {
     padding: 20px;
