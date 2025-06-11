@@ -568,6 +568,7 @@ input:focus {
     transition: left 0.3s ease; /* Smooth slide effect */
     gap: 20px;
     z-index: 1;
+    overflow-y: auto;
   }
 
   .navigation-container a {
@@ -768,6 +769,7 @@ input:focus {
     transition: left 0.3s ease; /* Smooth slide effect */
     gap: 20px;
     z-index: 1;
+    overflow-y: auto;
   }
 
   .navigation-container a {
@@ -968,6 +970,7 @@ input:focus {
     transition: left 0.3s ease; /* Smooth slide effect */
     gap: 20px;
     z-index: 1;
+    overflow-y: auto;
   }
 
   .navigation-container a {
