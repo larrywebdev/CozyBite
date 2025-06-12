@@ -52,6 +52,7 @@ ul {
 .hero {
   padding: 1rem;
   height: 90vh;
+  max-height: 600px;
   color: #ffffff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   justify-items: center;
@@ -78,6 +79,7 @@ ul {
   background: url("images/auth/christin-hume-mfB1B1s4sMc-unsplash.jpg")
     center/cover no-repeat;
   height: 100vh;
+  max-height: none;
 }
 .testimonials {
   background: url("images/testimonials/jason-goodman-NYMJYXfZG-g-unsplash.jpg")
@@ -227,7 +229,6 @@ ul {
   aspect-ratio: 5/4;
 }
 .about-us {
-  min-height: 80vh;
   width: 100%;
   padding: 100px 20px 30px;
   background-color: #f7e1c7;
@@ -287,12 +288,19 @@ input {
   height: 38px;
 }
 .contact-us {
-  display: flex;
-  justify-content: space-between;
   background-color: #f7e1c7;
-  padding: 80px 30px;
-  width: 100%;
+  padding: 80px 20px;
 }
+
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-self: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .contact-details,
 .contact-form {
   text-align: justify;
@@ -304,6 +312,7 @@ input {
 .horizontal-form {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 #form1 input,
 #form2 input {
@@ -319,13 +328,15 @@ input {
 }
 .form-group label {
   font-size: 20px;
-  margin: 20px 0 10px;
+  margin-top: 20px;
 }
 .form-group input {
+  margin-top: 5px;
   border: none;
 }
 .form-group textarea {
-  height: 25vh;
+  height: 125px;
+  margin-top: 5px;
   resize: none;
   border: none;
 }
@@ -737,6 +748,23 @@ input:focus {
     margin: 25px 0;
   }
 
+  .contact-form,
+  .contact-details {
+    width: 100%;
+  }
+  .contact-info {
+    flex-wrap: wrap;
+  }
+  .horizontal-form {
+    flex-wrap: wrap;
+  }
+  .form-group {
+    width: 100%;
+  }
+  #form1 input,
+  #form2 input {
+    width: 100%;
+  }
   .footer-top,
   .footer-bottom {
     padding: 20px;
@@ -938,6 +966,26 @@ input:focus {
     width: 80%;
   }
 
+  .contact-form,
+  .contact-details {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .contact-info {
+    flex-wrap: wrap;
+  }
+  .horizontal-form {
+    flex-wrap: wrap;
+  }
+  .form-group {
+    width: 100%;
+  }
+  #form1 input,
+  #form2 input {
+    width: 100%;
+  }
+
   .footer-top,
   .footer-bottom {
     padding: 20px;
@@ -1111,6 +1159,26 @@ input:focus {
   .testimonials-card {
     width: 32%;
   }
+
+  .contact-form,
+  .contact-details {
+    width: clamp(350px, 48%, 50%);
+  }
+  .contact-info {
+    flex-wrap: wrap;
+  }
+  .horizontal-form {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .form-group {
+    width: 100%;
+  }
+  #form1 input,
+  #form2 input {
+    width: 100%;
+  }
+
   .footer-top,
   .footer-bottom {
     padding: 20px;
@@ -1215,6 +1283,22 @@ input:focus {
 
   .testimonials-card {
     width: 32%;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: clamp(350px, 48%, 50%);
+  }
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+  #form1 input,
+  #form2 input {
+    width: 100%;
   }
 
   .footer-top {
