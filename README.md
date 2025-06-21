@@ -32,7 +32,7 @@ cd CozyBite
 ## Usage
 
 You can view the live site here:  
-👉 [Live Demo](https://larrywebdev.github.io/CozyBite)
+👉 [Live Demo](https://cozy-bite.vercel.app/)
 
 To use the project locally:
 
