@@ -153,6 +153,9 @@ ul {
   margin-top: 20px;
   border: 0.5px solid #ffffff;
 }
+.reservation p {
+  font-size: 1rem;
+}
 
 .home-gallery {
   padding: 20px 40px 60px;
